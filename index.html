@@ -15,7 +15,10 @@
 		<!-- <script type="text/javascript" src="assets/scripts/jquery.pjax.js"></script> -->
 		<script type="text/javascript" src="assets/scripts/seajs/2.3.0/sea-debug.js"></script>
 		<script type="text/javascript">
-		seajs.production = false;
+		seajs.production = true;
+		if(window.location.href.indexOf('?dev') > 0) {
+			seajs.production = false;
+		}
 		seajs.config({
 			base: './assets/scripts',
 			alias: {
