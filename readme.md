@@ -1,14 +1,14 @@
 pjax+seajs
 ----------------
 
-## Why Pjax
+### 为什么是pjax
 
 如果你使用chrome等浏览器访问Github时，你会发现页面之间的点击是通过ajax异步请求的，同时页面URL也放生了变化。
 并且能够很好的支持浏览器的前进与后退。
 
 更多请看这篇博文：http://www.welefen.com/use-ajax-and-pushstate.html
 
-## Differencie With Ajax
+### 与ajax的不同
 
 传统的ajax有如下的问题：
 
@@ -29,3 +29,17 @@ pjax+seajs
 可以通过pushState和replaceState接口操作浏览器历史，并且改变当前页面的URL。
 
 pushState是将指定的URL添加到浏览器历史里，replaceState是将指定的URL替换当前的URL。
+
+### 查看效果
+
+1. 未打包效果查看
+
+http://blog.weifanfou.com/self-seajs-solution/index.html?dev
+
+2. 查看打包后的效果
+
+http://blog.weifanfou.com/self-seajs-solution/index.html
+
+### 原理
+
+可查看源代码，非常简单
