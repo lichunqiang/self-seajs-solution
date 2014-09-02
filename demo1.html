@@ -1,0 +1,19 @@
+<link href="http://cdn.bootcss.com/alertify.js/0.3.11/alertify.core.css" rel="stylesheet">
+<link href="http://cdn.bootcss.com/alertify.js/0.3.11/alertify.default.css" rel="stylesheet">
+<div class="jumbotron">
+	<h1>This is demo1.html</h1>
+	<p><a href="demo2.html">Go to demo2</a></p>
+	<p><button id='test' class="btn btn-primary">alert</button></p>
+</div>
+<script type="text/javascript">
+	seajs.use(['app/index', '$'], function(index, $){
+		//call function
+		index.init();
+
+		$('#test').on('click', function(event) {
+			event.preventDefault();
+			/* Act on the event */
+			alert(index.getName());
+		});
+	})
+</script>
